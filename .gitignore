@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore all environment files.
-/.env*
+/env*
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -32,3 +32,108 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ruby / Rails
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Documentation cache and generated files
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Bundler
+/.bundle/
+/vendor/bundle
+
+# Rails specific
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+/public/assets
+/public/packs
+/public/packs-test
+.byebug_history
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Credentials
+/config/master.key
+/config/credentials/*.key
+
+# Node.js
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log*
+/.pnp
+.pnp.js
+
+# Build outputs
+/build/
+/dist/
+/.cache/
+
+# IDE / Editors
+/.idea/
+*.swp
+*.swo
+*~
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage
+/coverage/
+
+# Spring
+/spring/*.pid
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore Byebug command history file
+.byebug_history
+
+# Ignore precompiled assets
+/public/assets/
+
+# Ignore pid files
+/tmp/pids/*
+!/tmp/pids/.keep
