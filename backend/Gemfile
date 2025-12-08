@@ -46,4 +46,5 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-gem "rdoc", "~> 6.7.0" # Prevents pulling in newer psych versions
+gem "psych", "4.0.0"
+
