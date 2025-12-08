@@ -4,7 +4,6 @@
       "src": "backend/config.ru",
       "use": "@vercel/ruby",
       "config": {
-        "installCommand": "cd backend && bundle config set --local deployment true && bundle config set --local frozen true && bundle install",
         "buildCommand": "cd backend && bundle exec rails db:migrate"
       }
     }
