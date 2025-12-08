@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API_BASE = '/api/v1'
+const API_BASE = import.meta.env.VITE_API_URL || '/api/v1'
 
 function App() {
   const [response, setResponse] = useState(null)
@@ -53,7 +53,7 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch('/up')
+      const res = await fetch(`${import.meta.env.VITE_API_URL?.replace('/api/v1', '') || ''}/up`)
       const text = await res.text()
       setResponse({ status: res.status, data: text || 'OK', endpoint: 'GET /up' })
     } catch (err) {

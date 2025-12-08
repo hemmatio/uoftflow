@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "backend/config.ru",
+      "use": "@vercel/ruby"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/config.ru"
+    }
+  ]
+}
