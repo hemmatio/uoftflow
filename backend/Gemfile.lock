@@ -74,9 +74,9 @@ GEM
       uri (>= 0.13.1)
     ast (2.4.3)
     base64 (0.3.0)
-    bcrypt_pbkdf (1.1.1)
-    bcrypt_pbkdf (1.1.1-arm64-darwin)
-    bcrypt_pbkdf (1.1.1-x86_64-darwin)
+    bcrypt_pbkdf (1.1.2)
+    bcrypt_pbkdf (1.1.2-arm64-darwin)
+    bcrypt_pbkdf (1.1.2-x86_64-darwin)
     benchmark (0.5.0)
     bigdecimal (3.3.1)
     bootsnap (1.19.0)
@@ -85,16 +85,15 @@ GEM
       racc
     builder (3.3.0)
     concurrent-ruby (1.3.5)
-    connection_pool (2.5.4)
+    connection_pool (3.0.2)
     crass (1.0.6)
     date (3.5.0)
     debug (1.11.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    dotenv (3.1.8)
+    dotenv (3.2.0)
     drb (2.2.3)
     ed25519 (1.4.0)
-    erb (6.0.0)
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
@@ -110,8 +109,8 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.16.0)
-    kamal (2.8.2)
+    json (2.17.1)
+    kamal (2.9.0)
       activesupport (>= 7.0)
       base64 (~> 0.2)
       bcrypt_pbkdf (~> 1.0)
@@ -136,7 +135,7 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.26.1)
+    minitest (5.26.2)
     msgpack (1.8.0)
     net-imap (0.5.12)
       date
@@ -185,8 +184,7 @@ GEM
       prettyprint
     prettyprint (0.2.0)
     prism (1.6.0)
-    psych (5.2.6)
-      date
+    psych (5.1.2)
       stringio
     puma (7.1.0)
       nio4r (~> 2.0)
@@ -198,7 +196,7 @@ GEM
       rack (>= 3.0.0)
     rack-test (2.2.0)
       rack (>= 1.3)
-    rackup (2.2.1)
+    rackup (2.3.1)
       rack (>= 3)
     rails (8.0.4)
       actioncable (= 8.0.4)
@@ -232,10 +230,8 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.3.1)
-    rdoc (6.15.1)
-      erb
+    rdoc (6.7.0)
       psych (>= 4.0.0)
-      tsort
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
@@ -257,7 +253,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.47.1, < 2.0)
-    rubocop-rails (2.33.4)
+    rubocop-rails (2.34.2)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
@@ -292,14 +288,14 @@ GEM
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
-    stringio (3.1.8)
+    stringio (3.1.9)
     thor (1.4.0)
     thruster (0.1.16)
     thruster (0.1.16-aarch64-linux)
     thruster (0.1.16-arm64-darwin)
     thruster (0.1.16-x86_64-darwin)
     thruster (0.1.16-x86_64-linux)
-    timeout (0.4.4)
+    timeout (0.5.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -332,8 +328,10 @@ DEPENDENCIES
   debug
   kamal
   pg (~> 1.1)
+  psych (= 5.1.2)
   puma (>= 5.0)
   rails (~> 8.0.2, >= 8.0.2.1)
+  rdoc (~> 6.7.0)
   rubocop-rails-omakase
   solid_cable
   solid_cache
