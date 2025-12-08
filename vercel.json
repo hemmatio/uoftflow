@@ -2,7 +2,10 @@
   "builds": [
     {
       "src": "backend/config.ru",
-      "use": "@vercel/ruby"
+      "use": "@vercel/ruby",
+      "config": {
+        "buildCommand": "cd backend && bundle exec rails db:migrate"
+      }
     }
   ],
   "routes": [
